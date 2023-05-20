@@ -31,10 +31,10 @@ public class Product {
     private String brand;
     private Double price;
     private int inStock;
-    private int warranty;
+    private String warranty;
     private String condition;
 
-    public Product(String name, String code, String brand, Double price, Integer inStock, int warranty, String condition) {
+    public Product(String name, String code, String brand, Double price, Integer inStock, String warranty, String condition) {
         this.name = name;
         this.code = code;
         this.brand = brand;

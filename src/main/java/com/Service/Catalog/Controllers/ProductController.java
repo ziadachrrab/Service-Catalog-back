@@ -22,6 +22,11 @@ public class ProductController {
     public List<Product> getProducts(){
         return productService.getAllProducts();
     }
+
+    @GetMapping("/find/{name}")
+    public void findProduct(@PathVariable("name") String name){
+        productService.findByName(name);
+    }
     @PostMapping("/add")
     public void registerProduct(@RequestBody Product product){
         productService.addProduct(product);
